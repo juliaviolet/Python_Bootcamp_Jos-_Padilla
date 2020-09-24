@@ -13,3 +13,13 @@ def sum_divisors(n):
 
 print(sum_divisors(6)) # Should be 6 (sum of 1+2+3)
 print(sum_divisors(12)) # Should be 16 (sum of 1+2+3+4+6)
+
+def sum_div(number):
+    divisors = [0]
+    for i in range(1, number):
+        if (number%i)==0:
+            divisors.append(i)
+    return sum(divisors)
+print(sum_div(6))
+print(sum_div(12))
+print(sum_div(0))
